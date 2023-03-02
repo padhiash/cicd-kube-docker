@@ -7,7 +7,7 @@ pipeline {
     }
 */
     environment {
-        registry = "padhiash/cicd-kube-docker"
+        registry = "padhiash1/vproappdock"
         registryCredential = 'dockerhub'
 
     }
