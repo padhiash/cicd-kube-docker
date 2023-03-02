@@ -67,8 +67,8 @@ pipeline {
                    -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml'''
                 }
 
-                timeout(time: 5, unit: 'MINUTES') {
-                    waitForQualityGate webhookSecretId: 'mysonar'
+                timeout(time: 3, unit: 'MINUTES') {
+		     waitForQualityGate abortPipeline: true
                 }
             }
         }
